@@ -30,6 +30,18 @@
 (defn ^:export pam-assoc-2 []
   (assoc pam-2 :baz 3))
 
+(defn ^:export om-assoc-3 []
+  (assoc om-3 :woz 4))
+
+(defn ^:export pam-assoc-3 []
+  (assoc pam-3 :woz 4))
+
+(defn ^:export om-assoc-3-exist []
+  (assoc om-3 :baz 4))
+
+(defn ^:export pam-assoc-3-exist []
+  (assoc pam-3 :baz 4))
+
 (defn ^:export om-lookup-1 []
   (get om-1 :foo))
 

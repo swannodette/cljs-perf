@@ -151,7 +151,7 @@ na.b = function(a, b) {
   return na.a(b)
 };
 ma = na;
-var oa = g, qa = g, ra = {};
+var oa = g, pa = g, ra = {};
 function sa(a) {
   if(a ? a.O : a) {
     return a.O(a)
@@ -171,13 +171,13 @@ function ta(a) {
   return b.call(k, a)
 }
 var ua = {};
-function wa(a, b) {
+function va(a, b) {
   if(a ? a.A : a) {
     return a.A(a, b)
   }
   var c;
-  var d = wa[s(a == k ? k : a)];
-  d ? c = d : (d = wa._) ? c = d : e(z("ICollection.-conj", a));
+  var d = va[s(a == k ? k : a)];
+  d ? c = d : (d = va._) ? c = d : e(z("ICollection.-conj", a));
   return c.call(k, a, b)
 }
 var xa = {}, B, ya = k;
@@ -684,7 +684,7 @@ gb["null"] = function(a, b) {
   return H(b, "nil")
 };
 ua["null"] = j;
-wa["null"] = function(a, b) {
+va["null"] = function(a, b) {
   return I.a ? I.a(b) : I.call(k, b)
 };
 Ta["null"] = j;
@@ -1128,7 +1128,7 @@ nc.h = mc;
 lc = function(a, b, c) {
   switch(arguments.length) {
     case 2:
-      return wa(a, b);
+      return va(a, b);
     default:
       return nc.h(a, b, P(arguments, 2))
   }
@@ -1137,7 +1137,7 @@ lc = function(a, b, c) {
 lc.r = 2;
 lc.n = nc.n;
 lc.b = function(a, b) {
-  return wa(a, b)
+  return va(a, b)
 };
 lc.h = nc.h;
 kc = lc;
@@ -1392,7 +1392,7 @@ Pc = Qc;
 var Tc = g, Uc, Vc = k;
 function Wc(a, b) {
   var c = K(b);
-  return c ? qa.e ? qa.e(a, M(c), O(c)) : qa.call(k, a, M(c), O(c)) : a.D ? a.D() : a.call(k)
+  return c ? pa.e ? pa.e(a, M(c), O(c)) : pa.call(k, a, M(c), O(c)) : a.D ? a.D() : a.call(k)
 }
 function Xc(a, b, c) {
   for(c = K(c);;) {
@@ -1441,7 +1441,7 @@ Zc = function(a, b, c) {
 };
 Zc.b = $c;
 Zc.e = ad;
-qa = Zc;
+pa = Zc;
 function bd(a) {
   return 0 <= (a - a % 2) / 2 ? Math.floor.a ? Math.floor.a((a - a % 2) / 2) : Math.floor.call(k, (a - a % 2) / 2) : Math.ceil.a ? Math.ceil.a((a - a % 2) / 2) : Math.ceil.call(k, (a - a % 2) / 2)
 }
@@ -1579,7 +1579,7 @@ var od = g, Hb = function(a, b) {
 }, xb = function(a, b) {
   return a ^ b + 2654435769 + (a << 6) + (a >> 2)
 }, Xb = function(a) {
-  return qa.e(function(a, c) {
+  return pa.e(function(a, c) {
     return xb(a, J.b(c, m))
   }, J.b(M(a), m), O(a))
 }, pd = g, qd = g;
@@ -2186,31 +2186,31 @@ function ee(a, b, c) {
   if(14 === b) {
     return a.Xa ? a.Xa(c, d, f, h, i, a, l, q, y, A, E, G, L, T) : a.Xa ? a.Xa(c, d, f, h, i, a, l, q, y, A, E, G, L, T) : a.call(k, c, d, f, h, i, a, l, q, y, A, E, G, L, T)
   }
-  var Y = C(fa), pa = D(fa);
+  var Y = C(fa), qa = D(fa);
   if(15 === b) {
     return a.Ya ? a.Ya(c, d, f, h, i, a, l, q, y, A, E, G, L, T, Y) : a.Ya ? a.Ya(c, d, f, h, i, a, l, q, y, A, E, G, L, T, Y) : a.call(k, c, d, f, h, i, a, l, q, y, A, E, G, L, T, Y)
   }
-  var fa = C(pa), va = D(pa);
+  var fa = C(qa), wa = D(qa);
   if(16 === b) {
     return a.Za ? a.Za(c, d, f, h, i, a, l, q, y, A, E, G, L, T, Y, fa) : a.Za ? a.Za(c, d, f, h, i, a, l, q, y, A, E, G, L, T, Y, fa) : a.call(k, c, d, f, h, i, a, l, q, y, A, E, G, L, T, Y, fa)
   }
-  var pa = C(va), $a = D(va);
+  var qa = C(wa), $a = D(wa);
   if(17 === b) {
-    return a.$a ? a.$a(c, d, f, h, i, a, l, q, y, A, E, G, L, T, Y, fa, pa) : a.$a ? a.$a(c, d, f, h, i, a, l, q, y, A, E, G, L, T, Y, fa, pa) : a.call(k, c, d, f, h, i, a, l, q, y, A, E, G, L, T, Y, fa, pa)
+    return a.$a ? a.$a(c, d, f, h, i, a, l, q, y, A, E, G, L, T, Y, fa, qa) : a.$a ? a.$a(c, d, f, h, i, a, l, q, y, A, E, G, L, T, Y, fa, qa) : a.call(k, c, d, f, h, i, a, l, q, y, A, E, G, L, T, Y, fa, qa)
   }
-  var va = C($a), sc = D($a);
+  var wa = C($a), sc = D($a);
   if(18 === b) {
-    return a.ab ? a.ab(c, d, f, h, i, a, l, q, y, A, E, G, L, T, Y, fa, pa, va) : a.ab ? a.ab(c, d, f, h, i, a, l, q, y, A, E, G, L, T, Y, fa, pa, va) : a.call(k, c, d, f, h, i, a, l, q, y, A, E, G, L, T, Y, fa, pa, va)
+    return a.ab ? a.ab(c, d, f, h, i, a, l, q, y, A, E, G, L, T, Y, fa, qa, wa) : a.ab ? a.ab(c, d, f, h, i, a, l, q, y, A, E, G, L, T, Y, fa, qa, wa) : a.call(k, c, d, f, h, i, a, l, q, y, A, E, G, L, T, Y, fa, qa, wa)
   }
   $a = C(sc);
   sc = D(sc);
   if(19 === b) {
-    return a.bb ? a.bb(c, d, f, h, i, a, l, q, y, A, E, G, L, T, Y, fa, pa, va, $a) : a.bb ? a.bb(c, d, f, h, i, a, l, q, y, A, E, G, L, T, Y, fa, pa, va, $a) : a.call(k, c, d, f, h, i, a, l, q, y, A, E, G, L, T, Y, fa, pa, va, $a)
+    return a.bb ? a.bb(c, d, f, h, i, a, l, q, y, A, E, G, L, T, Y, fa, qa, wa, $a) : a.bb ? a.bb(c, d, f, h, i, a, l, q, y, A, E, G, L, T, Y, fa, qa, wa, $a) : a.call(k, c, d, f, h, i, a, l, q, y, A, E, G, L, T, Y, fa, qa, wa, $a)
   }
   var Sd = C(sc);
   D(sc);
   if(20 === b) {
-    return a.cb ? a.cb(c, d, f, h, i, a, l, q, y, A, E, G, L, T, Y, fa, pa, va, $a, Sd) : a.cb ? a.cb(c, d, f, h, i, a, l, q, y, A, E, G, L, T, Y, fa, pa, va, $a, Sd) : a.call(k, c, d, f, h, i, a, l, q, y, A, E, G, L, T, Y, fa, pa, va, $a, Sd)
+    return a.cb ? a.cb(c, d, f, h, i, a, l, q, y, A, E, G, L, T, Y, fa, qa, wa, $a, Sd) : a.cb ? a.cb(c, d, f, h, i, a, l, q, y, A, E, G, L, T, Y, fa, qa, wa, $a, Sd) : a.call(k, c, d, f, h, i, a, l, q, y, A, E, G, L, T, Y, fa, qa, wa, $a, Sd)
   }
   e(Error("Only up to 20 arguments supported on functions"))
 }
@@ -2468,7 +2468,7 @@ function Ge(a) {
 function He(a, b) {
   var c;
   a ? (c = a.p & 4, c = v(c ? c : a.Hb) ? j : a.p ? m : w(hb, a)) : c = w(hb, a);
-  v(c) ? (c = qa.e(jb, ib(a), b), c = kb(c)) : c = qa.e(wa, a, b);
+  v(c) ? (c = pa.e(jb, ib(a), b), c = kb(c)) : c = pa.e(va, a, b);
   return c
 }
 function Ie(a, b) {
@@ -2642,7 +2642,7 @@ function Ye(a) {
   }
 }
 Yc = function(a) {
-  return kb(qa.e(jb, ib(We), a))
+  return kb(pa.e(jb, ib(We), a))
 };
 function Ze(a) {
   var b = k;
@@ -2970,7 +2970,7 @@ r.apply = function(a, b) {
   return a.call.apply(a, [a].concat(b.slice()))
 };
 r.A = function(a, b) {
-  return Ic(b) ? a.S(a, B.b(b, 0), B.b(b, 1)) : qa.e(wa, a, b)
+  return Ic(b) ? a.S(a, B.b(b, 0), B.b(b, 1)) : pa.e(va, a, b)
 };
 r.toString = function() {
   return x.a ? x.a(this) : x.call(k, this)
@@ -3074,7 +3074,7 @@ r.apply = function(a, b) {
   return a.call.apply(a, [a].concat(b.slice()))
 };
 r.A = function(a, b) {
-  return Ic(b) ? a.S(a, B.b(b, 0), B.b(b, 1)) : qa.e(wa, a, b)
+  return Ic(b) ? a.S(a, B.b(b, 0), B.b(b, 1)) : pa.e(va, a, b)
 };
 r.toString = function() {
   return x.a ? x.a(this) : x.call(k, this)
@@ -3692,7 +3692,7 @@ r.apply = function(a, b) {
   return a.call.apply(a, [a].concat(b.slice()))
 };
 r.A = function(a, b) {
-  return Ic(b) ? a.S(a, B.b(b, 0), B.b(b, 1)) : qa.e(wa, a, b)
+  return Ic(b) ? a.S(a, B.b(b, 0), B.b(b, 1)) : pa.e(va, a, b)
 };
 r.toString = function() {
   return x.a ? x.a(this) : x.call(k, this)
@@ -4108,7 +4108,7 @@ r.apply = function(a, b) {
   return a.call.apply(a, [a].concat(b.slice()))
 };
 r.A = function(a, b) {
-  return Ic(b) ? a.S(a, B.b(b, 0), B.b(b, 1)) : qa.e(wa, a, b)
+  return Ic(b) ? a.S(a, B.b(b, 0), B.b(b, 1)) : pa.e(va, a, b)
 };
 r.toString = function() {
   return x.a ? x.a(this) : x.call(k, this)
@@ -4648,6 +4648,18 @@ ga("cljs_perf.om_vs_pam.core.om_assoc_2", function() {
 });
 ga("cljs_perf.om_vs_pam.core.pam_assoc_2", function() {
   return yc.e(ah, "\ufdd0:baz", 3)
+});
+ga("cljs_perf.om_vs_pam.core.om_assoc_3", function() {
+  return yc.e(bh, "\ufdd0:woz", 4)
+});
+ga("cljs_perf.om_vs_pam.core.pam_assoc_3", function() {
+  return yc.e(ch, "\ufdd0:woz", 4)
+});
+ga("cljs_perf.om_vs_pam.core.om_assoc_3_exist", function() {
+  return yc.e(bh, "\ufdd0:baz", 4)
+});
+ga("cljs_perf.om_vs_pam.core.pam_assoc_3_exist", function() {
+  return yc.e(ch, "\ufdd0:baz", 4)
 });
 ga("cljs_perf.om_vs_pam.core.om_lookup_1", function() {
   return F.e(Yg, "\ufdd0:foo", k)

@@ -8,4 +8,8 @@
               [{:id "om_vs_pam"
                 :source-paths ["src/cljs_perf/om_vs_pam/"]
                 :compiler {:optimizations :advanced
-                           :output-to "om_vs_pam.js"}}]})
+                           :output-to "om_vs_pam.js"}}
+               {:id "om_vs_pam_vs_phm"
+                :source-paths ["src/cljs_perf/om_vs_pam_vs_phm/"]
+                :compiler {:optimizations :advanced
+                           :output-to "om_vs_pam_phm.js"}}]})

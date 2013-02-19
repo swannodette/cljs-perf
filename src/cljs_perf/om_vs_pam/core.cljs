@@ -12,6 +12,9 @@
 (def om-3 {:foo 1 :bar 2 :baz 3})
 (def pam-3 (array-map :foo 1 :bar 2 :baz 3))
 
+(def om-7 (into {} (take 7 (map #(vector (str %1) %2) (range 1) (range 1)))))
+(def pam-7 (into (array-map) (take 7 (map #(vector (str %1) %2) (range 1) (range 1)))))
+
 (defn ^:export om-assoc []
   (assoc om :foo 1))
 

@@ -3875,17 +3875,15 @@ ga("cljs_perf.om_pam_vs_phm.core.om_assoc_7", function() {
 ga("cljs_perf.om_pam_vs_phm.core.pam_assoc_7", function() {
   return ic.e(Kf, "7", 7)
 });
-function Mf() {
+ga("cljs_perf.om_pam_vs_phm.core.phm_assoc_7", function() {
   return ic.e(Lf, "7", 7)
-}
-ga("cljs_perf.om_pam_vs_phm.core.phm_assoc_7", Mf);
+});
 ga("cljs_perf.om_pam_vs_phm.core.om_lookup_7", function() {
   return Aa.e(Jf, "6", l)
 });
 ga("cljs_perf.om_pam_vs_phm.core.pam_lookup_7", function() {
   return Aa.e(Kf, "6", l)
 });
-Mf = function() {
+ga("cljs_perf.om_pam_vs_phm.core.phm_lookup_7", function() {
   return Aa.e(Lf, "6", l)
-};
-ga("cljs_perf.om_pam_vs_phm.core.phm_assoc_7", Mf);
+});

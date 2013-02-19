@@ -19,5 +19,5 @@
 (defn ^:export pam-lookup-7 []
   (get pam-7 "6"))
 
-(defn ^:export phm-assoc-7 []
+(defn ^:export phm-lookup-7 []
   (get phm-7 "6"))

@@ -12,4 +12,8 @@
                {:id "om_vs_pam_vs_phm"
                 :source-paths ["src/cljs_perf/om_vs_pam_vs_phm/"]
                 :compiler {:optimizations :advanced
-                           :output-to "om_vs_pam_phm.js"}}]})
+                           :output-to "om_vs_pam_phm.js"}}
+               {:id "ratcliff"
+                :source-paths ["src/cljs_perf/ratcliff"]
+                :compiler {:optimizations :advanced
+                           :output-to "ratcliff.js"}}]})

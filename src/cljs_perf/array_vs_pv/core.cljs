@@ -50,3 +50,9 @@
     (if (< i 1e6)
       (recur (inc i) (+ s (-nth big-pv i)))
       s)))
+
+(defn ^:export arr-hi-reduce []
+  (.reduce big-arr (fn [a b] (+ a b))))
+
+(defn ^:export vector-hi-reduce []
+  (reduce + big-pv))

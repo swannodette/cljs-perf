@@ -17,6 +17,7 @@
                {:id "array_vs_pv"
                 :source-paths ["src/cljs_perf/array_vs_pv/"]
                 :compiler {:optimizations :advanced
+                           :pretty-print false
                            :output-to "array_vs_pv.js"}}
                {:id "ratcliff"
                 :source-paths ["src/cljs_perf/ratcliff"]

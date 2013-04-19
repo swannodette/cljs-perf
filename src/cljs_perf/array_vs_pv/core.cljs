@@ -13,13 +13,13 @@
 
 (defn ^:export vector-conj []
   (let [pv []]
-    (loop [i 0 pv []]
+    (loop [i 0 ^not-native pv []]
       (if (< i 1e6)
-        (recur (inc i) (conj pv i))
+        (recur (inc i) (-conj pv i))
         pv))))
 
 (defn ^:export transient-vector-conj []
-  (loop [i 0 tv (transient [])]
+  (loop [i 0 ^not-native tv (transient [])]
     (if (< i 1e6)
       (recur (inc i) (-conj! tv i))
       (persistent! tv))))
@@ -37,7 +37,7 @@
       (persistent! tv))))
 
 (def big-arr (make-big-array))
-(def big-pv (make-big-vector))
+(def ^not-native big-pv (make-big-vector))
 
 (defn ^:export arr-reduce []
   (loop [i 0 s 0]

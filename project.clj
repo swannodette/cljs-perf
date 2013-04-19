@@ -2,7 +2,8 @@
   :description "FIXME: write description"
   :source-paths ["clojurescript/src/clj"
                  "clojurescript/src/cljs"]
-  :dependencies [[org.clojure/clojure "1.4.0"]]
+  :dependencies [[org.clojure/clojure "1.5.1"]
+                 [org.clojure/data.json "0.2.2"]]
   :plugins [[lein-cljsbuild "0.3.0"]]
   :cljsbuild {:builds
               [{:id "om_vs_pam"

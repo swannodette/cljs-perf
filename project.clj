@@ -13,6 +13,10 @@
                 :source-paths ["src/cljs_perf/om_vs_pam_vs_phm/"]
                 :compiler {:optimizations :advanced
                            :output-to "om_vs_pam_phm.js"}}
+               {:id "array_vs_pv"
+                :source-paths ["src/cljs_perf/array_vs_pv/"]
+                :compiler {:optimizations :advanced
+                           :output-to "array_vs_pv.js"}}
                {:id "ratcliff"
                 :source-paths ["src/cljs_perf/ratcliff"]
                 :compiler {:optimizations :advanced

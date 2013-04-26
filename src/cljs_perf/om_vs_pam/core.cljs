@@ -12,8 +12,8 @@
 (def ^not-native om-3 {:foo 1 :bar 2 :baz 3})
 (def ^not-native pam-3 (array-map :foo 1 :bar 2 :baz 3))
 
-(def ^not-native om-7 (into {} (take 7 (map #(vector (str %1) %2) (range 1) (range 1)))))
-(def ^not-native pam-7 (into (array-map) (take 7 (map #(vector (str %1) %2) (range 1) (range 1)))))
+(def ^not-native om-7 (into {} (take 7 (map #(vector (str %1) %2) (rest (range)) (rest (range))))))
+(def ^not-native pam-7 (into (array-map) (take 7 (map #(vector (str %1) %2) (rest (range)) (rest (range))))))
 
 (defn ^:export om-assoc []
   (-assoc om :foo 1))
@@ -70,7 +70,7 @@
   (-lookup pam-3 :baz))
 
 (defn ^:export om-lookup-7 []
-  (-lookup om-7 :8 8))
+  (-lookup om-7 "7"))
 
 (defn ^:export pam-lookup-7 []
-  (-lookup pam-7 :8 8))
+  (-lookup pam-7 "7"))

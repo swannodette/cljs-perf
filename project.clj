@@ -22,4 +22,9 @@
                {:id "ratcliff"
                 :source-paths ["src/cljs_perf/ratcliff"]
                 :compiler {:optimizations :advanced
-                           :output-to "ratcliff.js"}}]})
+                           :output-to "ratcliff.js"}}
+               {:id "chunks"
+                :source-paths ["src/cljs_perf/chunks"]
+                :compiler {:optimizations :simple
+                           :static-fns true 
+                           :output-to "chunks.js"}}]})
